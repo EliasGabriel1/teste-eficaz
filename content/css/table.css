@@ -1,0 +1,66 @@
+tbody tr td.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.content-form{
+    margin: 20px 0;
+}
+
+form>.content-form{
+    column-count: 2;
+}
+
+.container-data{
+    background-color: #fff;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.container-cadastro{
+    margin: 0 auto;
+    max-width: 90%;;
+}
+
+form>.button{   
+    display: flex;
+    justify-content: end;
+    margin: 30px 0;
+}   
+
+.button>button{
+    width: 144px;
+    height: 33px;
+    background-color: #00b05a;
+    color: #fff;
+}
+
+tbody>tr>td ,thead>tr>th{
+    text-align: start;
+}
+
+.group-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 900px){
+    form>.content-form{
+        column-count: 1;
+    }
+    
+    .container-data{
+        margin: 0 10px 20px 10px;
+    }
+    .data_email{
+        word-break: break-word;
+        min-width: 125px;
+        max-width: 125px;
+    }
+}
