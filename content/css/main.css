@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary-color: hotpink;
+    --second-color: #00cdf4;
+    --button_menu-active: #009dde;
+    --button_excluir-active: rgb(255,86,86);;
+    --button_mudar-active: rgb(0, 176, 90);
+    --backround-body:#e9eef0;
+}
 
 a{ text-decoration: none;}
 
@@ -15,7 +23,7 @@ ul{
     padding: 0;
 }
 
-body{background-color: #e9eef0;}
+body{background-color: var(--backround-body);}
 
 input{
     padding-left: 5px;
@@ -62,22 +70,22 @@ nav>ul>li{
     padding-right: 10px;
     margin-right: 20px;
     height: 40px;
-    background-color: #00cdf4;
+    background-color: var(--second-color);
 }
 
-nav>ul>li.active{background-color: #009dde;}
+nav>ul>li.active{background-color:var(--button_menu-active);}
 
 button.bc-green{
     height: 23px;
     width: 56px;
-    background-color: rgb(0, 176, 90);
+    background-color: var(--button_mudar-active);
     color: #fff;
 }
 
 button.bc-red{
     height: 23px;
     width: 56px;
-    background-color: rgb(255,86,86);
+    background-color: var(--button_excluir-active);
     color: #fff;
 }
 
